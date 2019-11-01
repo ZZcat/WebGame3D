@@ -1,0 +1,20 @@
+TODO:
+ - Fix Camera
+ - Add support for touchscreen controls
+ - Add support for controlers/joysticks
+ - Add server support
+ - Don't hardcode control fetures
+https://medium.com/@necsoft/three-js-101-hello-world-part-1-443207b1ebe1
+
+Light:
+  const light = new THREE.AmbientLight(0xaaaaaa);
+  scene.add(light);
+  const shadowLight = new THREE.PointLight(0x777777, 1, 100);
+  shadowLight.position.set(0, 0, 10);
+  scene.add(shadowLight);
+  shadowLight.castShadow = true;
+  shadowLight.shadow.mapSize.width = 1024;
+  shadowLight.shadow.mapSize.height = 1024;
+
+Ground:
+  https://joshondesign.com/p/books/canvasdeepdive/chapter11.html
